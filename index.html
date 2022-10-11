@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="scss/media.css">
+    <!-- owl carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel //  -->
+
+    <title>JadaPaisa</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg jadapaisa_navbar navbar-light d-none d-lg-block">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse jadapaisa_menus" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item hvr-bounce-to-bottom">
+                        <a class="nav-link" aria-current="page" href="#">Learn</a>
+                    </li>
+                    <li class="nav-item hvr-bounce-to-bottom">
+                        <a class="nav-link" aria-current="page" href="#">Play</a>
+                    </li>
+                    <li class="nav-item hvr-bounce-to-bottom">
+                        <a class="nav-link" aria-current="page" href="#">Earn</a>
+                    </li>
+                    <li class="nav-item hvr-bounce-to-bottom">
+                        <a class="nav-link" aria-current="page" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item hvr-bounce-to-bottom">
+                        <a class="nav-link" aria-current="page" href="#">Meet The Team</a>
+                    </li>
+                    <li class="nav-item hvr-bounce-to-bottom">
+                        <a class="nav-link" aria-current="page" href="#">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- mobile Menu  -->
+    <nav class="navbar navbar-expand-lg navbar-light jadapaisa_mobile_menu d-block d-lg-none p-0">
+        <div id="mySidenav" class="sidenav">
+            <div class="row my-4 px-3">
+                <div class="col-8">
+                    <img src="images/logo.png" alt="" class="w-75">
+                </div>
+                <div class="col-2">
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+            </div>
+            <ul class="p-0">
+                <li><a href="#" class="text-white">Learn</a></li>
+                <li><a href="#" class="text-white">Play</a></li>
+                <li><a href="#" class="text-white">Earn</a></li>
+                <li><a href="#" class="text-white">About Us</a></li>
+                <li><a href="#" class="text-white">Meet The Team</a></li>
+                <li><a href="#" class="text-white">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="container-fluid text-white py-2" id="mobile_nav_header">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="hamberger.png"
+                            alt=""></span> -->
+                    <button class="navbar-toggler" onclick="openNav()" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-5">
+                    <img src="images/logo.png" alt="" class="w-100">
+                </div>
+                <div class="col-4">
+                    <ul class="mb-0">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Navbar end  -->
+    <!-- banner  -->
+    <section id="banner" class="banner my-5">
+        <div class="container">
+            <div class="row">
+                <!-- <img src="images/banner.png" alt="" class="w-100"> -->
+                <div class="banner_mobile_images_group">
+                    <img src="images/logo_jadapaisa_color.png" alt="" class="logo_jadapaisa_color">
+                    <img src="images/play.png" alt=""
+                        class="banner_1-5 game_banner_mobile animate__animated animate__fadeInLeftBig animate__delay-1s">
+                    <img src="images/earn.png" alt=""
+                        class="banner_2-4 earn_banner_mobile animate__animated animate__fadeInLeftBig">
+                    <img src="images/banner_middle.png" alt="" class="banner-middle">
+                    <img src="images/learn.png" alt=""
+                        class="banner_2-4 learn_banner_mobile animate__animated animate__fadeInRightBig">
+                    <img src="images/councelling.png" alt=""
+                        class="banner_1-5 Play_banner_mobile animate__animated animate__fadeInRightBig animate__delay-1s">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner end -->
+    <!-- Get it now -->
+    <section id="getItNow" class="getItNow my-5">
+        <div class="container">
+            <div class="row">
+                <div class="getitnowContent">
+                    <button class="hvr-wobble-horizontal">Get it Now</button>
+                    <p>Answer and Learn </p>
+                    <p>Play and Earn.</p>
+                    <p>It’s Your Turn To <a href="#">Learn.</a> <a href="#">Play.</a> <a href="#">Earn.</a> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Get it now end-->
+
+    <!-- Learn - Play - Earn -->
+    <section id="LearnPlayEarn" class="LearnPlayEarn my-5 d-none d-lg-block">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <div class="learn">
+                        <div class="learn_icon position-relative">
+                            <img src="images/book.png" alt="">
+                            <div class="arrow_image">
+                                <img src="images/arrow-image.png" alt="">
+                            </div>
+                        </div>
+                        <h2>Learn</h2>
+
+                        <div class="learn_mobile position-relative">
+                            <img src="images/learn.png" alt="">
+                            <div class="arrow_image_mobile">
+                                <img src="images/arrow-image.png" alt="">
+                            </div>
+                        </div>
+                        <div class="learn_discription">
+                            <!-- <ul>
+                                <li>Learn</li>
+                                <li>All About <span> Your Self</span></li>
+                                <li>All About <span> Your Interests</span></li>
+                                <li>All About <span> Your Environment</span></li>
+                            </ul> -->
+                            <p>All About <span class="typed-text"></span><span class="cursor">&nbsp;</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="learn">
+                        <div class="learn_icon playLearn_iconBg position-relative">
+                            <img src="images/play-icon.png" alt="">
+                            <div class="arrow_image">
+                                <img src="images/arrow-rotate.png" alt="">
+                            </div>
+                        </div>
+                        <h2>Play</h2>
+
+                        <div class="learn_mobile position-relative">
+                            <!-- <img src="images/play.png" alt=""> -->
+                            <div class="playMobileImage">
+                                <img src="images/Spin-Wheel.png" alt="" class="playMobileImageWheel">
+                            </div>
+                            <div class="arrow_image_mobile">
+                                <img src="images/arrow-rotate.png" alt="">
+                            </div>
+                        </div>
+                        <div class="learn_discription">
+                            <ul>
+                                <li>Exciting <span> Mini-Games</span></li>
+                                <li>Incentivized <span> Polls</span></li>
+                                <li>Incentivized <span> Quizzes</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="learn">
+                        <div class="learn_icon EarnLearn_iconBg">
+                            <img src="images/earn_icon.png" alt="">
+                        </div>
+                        <h2>Earn</h2>
+
+                        <div class="learn_mobile">
+                            <img src="images/earn.png" alt="">
+                        </div>
+                        <div class="learn_discription">
+                            <ul>
+                                <li>Game <span> Coins</span></li>
+                                <li>Amazing <span> Cash Prizes</span></li>
+                            </ul>
+                            <p>Tailored <span class="typed-text-earn"></span><span class="cursor-earn">&nbsp;</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learn - Play - Earn Mobile section-->
+
+    <section id="LearnPlayEarn" class="LearnPlayEarn d-block d-lg-none">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12">
+                    <div class="learn row">
+                        <div class="learn_mobile position-relative col-6">
+                            <img src="images/learn.png" alt="">
+                            <div class="arrow_image_mobile">
+                                <img src="images/arrow-image.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="learn_icon position-relative">
+                                <img src="images/book.png" alt="">
+                                <div class="arrow_image">
+                                    <img src="images/arrow-image.png" alt="">
+                                </div>
+                            </div>
+                            <h2>Learn</h2>
+
+                            <div class="learn_discription">
+                                <p>All About <span class="typed-text-Learn-mobile"></span><span
+                                        class="cursor-learn-mobile">&nbsp;</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- play  -->
+                    <div class="learn row">
+                        <div class="col-6">
+                            <div class="learn_icon playLearn_iconBg position-relative">
+                                <img src="images/play-icon.png" alt="">
+                            </div>
+                            <h2>Play</h2>
+
+                            <div class="learn_discription">
+                                <ul>
+                                    <li>Exciting <span> Mini-Games</span></li>
+                                    <li>Incentivized <span> Polls</span></li>
+                                    <li>Incentivized <span> Quizzes</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="learn_mobile position-relative col-6">
+                            <img src="images/play.png" alt="">
+                        </div>
+
+                    </div>
+                    <!-- Earn  -->
+                    <div class="learn row">
+                        <div class="learn_mobile position-relative col-6">
+                            <img src="images/earn.png" alt="">
+                        </div>
+                        <div class="col-6">
+                            <div class="learn_icon position-relative">
+                                <img src="images/earn_icon.png" alt="">
+                            </div>
+                            <h2>Earn</h2>
+
+                            <div class="learn_discription">
+                                <ul>
+                                    <li>Game <span> Coins</span></li>
+                                    <li>Amazing <span> Cash Prizes</span></li>
+                                </ul>
+                                <p>Tailored <span class="typed-text-earn-mobile"></span><span
+                                        class="cursor-earn-mobile">&nbsp;</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learn - Play - Earn Mobile section end-->
+
+    <!-- Services -->
+    <section id="Services" class="Services my-5 d-none d-lg-block" data-aos="fade-up">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-3">
+                    <div class="servicesAll">
+                        <img src="images/polls.png" alt="">
+                        <h2>Polls</h2>
+                        <p>Ever thought polls could be fun?
+                            Well our polls are and they tell you more about yourself and your environment!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicesAll">
+                        <img src="images/services_games.png" alt="">
+                        <h2>Games</h2>
+                        <p>They are fun to play and super easy to win!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicesAll">
+                        <img src="images/services_quizzes.png" alt="">
+                        <h2>Quizzes</h2>
+                        <p>Participate in your favourite genre and win real cash prizes!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicesAll">
+                        <img src="images/services_emotions.png" alt="">
+                        <h2>Emotions</h2>
+                        <p>Our Emotion Checker lets you know what makes you tick!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicesAll">
+                        <img src="images/services_personality.png" alt="">
+                        <h2>Personality</h2>
+                        <p>Ever thought what kind of personality are you?
+                            Our personality indicator helps you know just that.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicesAll">
+                        <img src="images/services_coins.png" alt="">
+                        <h2>Coins</h2>
+                        <p>Game coins are a virtual asset of JadaPaisa. Users will be rewarded with these game coins by
+                            performing various activities</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicesAll">
+                        <img src="images/services_discount.png" alt="">
+                        <h2>Tailored Discounts</h2>
+                        <p>Win custom offers, deals and discounts that you will rush to avail!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicesAll">
+                        <img src="images/services_cash.png" alt="">
+                        <h2>Cash Prizes</h2>
+                        <p>Test your knowledge on your favorite topics and win cash prizes!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Mobile  -->
+    <section id="Services" class="Services my-5 d-block d-lg-none" data-aos="fade-up">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="Services_for_mobile owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="col-md-3">
+                            <div class="servicesAll">
+                                <img src="images/polls.png" alt="">
+                                <h2>Polls</h2>
+                                <p>Ever thought polls could be fun?
+                                    Well our polls are and they tell you more about yourself and your environment!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3">
+                            <div class="servicesAll">
+                                <img src="images/services_games.png" alt="">
+                                <h2>Games</h2>
+                                <p>They are fun to play and super easy to win!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3">
+                            <div class="servicesAll">
+                                <img src="images/services_quizzes.png" alt="">
+                                <h2>Quizzes</h2>
+                                <p>Participate in your favourite genre and win real cash prizes!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3">
+                            <div class="servicesAll">
+                                <img src="images/services_emotions.png" alt="">
+                                <h2>Emotions</h2>
+                                <p>Our Emotion Checker lets you know what makes you tick!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3">
+                            <div class="servicesAll">
+                                <img src="images/services_personality.png" alt="">
+                                <h2>Personality</h2>
+                                <p>Ever thought what kind of personality are you?
+                                    Our personality indicator helps you know just that.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3">
+                            <div class="servicesAll">
+                                <img src="images/services_coins.png" alt="">
+                                <h2>Coins</h2>
+                                <p>Game coins are a virtual asset of JadaPaisa. Users will be rewarded with these game
+                                    coins by
+                                    performing various activities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3">
+                            <div class="servicesAll">
+                                <img src="images/services_discount.png" alt="">
+                                <h2>Tailored Discounts</h2>
+                                <p>Win custom offers, deals and discounts that you will rush to avail!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-3">
+                            <div class="servicesAll">
+                                <img src="images/services_cash.png" alt="">
+                                <h2>Cash Prizes</h2>
+                                <p>Test your knowledge on your favorite topics and win cash prizes!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Mobile end -->
+
+    <!-- Services end -->
+
+    <!-- About  -->
+    <section id="about" class="about my-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300"
+        data-aos-offset="0">
+        <div class="container">
+            <div class="row">
+                <div class="about_area">
+                    <div class="about_content order-2 order-lg-1">
+                        <h2>About <img src="images/jadaPaisa_color.png" alt=""></h2>
+                        <p>Jadapaisa is an ‘infotainment mobile application.’ Taking the concept of Play-to-Earn
+                            business model more than a few steps forward, JadaPaisa operates on the concept of Learn.
+                            Play. Earn.</p>
+                        <p>The user performs the following actions:
+                            Answer polls -> Earn game coins
+                            Play Mini Games -> Earn game coins and tailored discounts/offers from brand partners
+                            Participate in Quiz -> Earn cash prizes, tailored discounts/offers from brand partners
+                            Read relevant news stories based on the user interest and share opinions on relevant trends.
+                        </p>
+                    </div>
+                    <div class="about_image order-1 order-lg-2">
+                        <img src="images/About_intro.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About end  -->
+
+    <!-- Meet Our Team -->
+    <section id="meetOurTeam" class="meetOurTeam my-5" data-aos="zoom-in-up">
+        <div class="container">
+            <div class="row gy-4">
+                <h2>Meet Our Team</h2>
+                <div class="col-md-3 col-12">
+                    <div class="jadapaisa_team">
+                        <div class="teamMemberPhoto">
+                            <img src="images/teamMember.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4><b>Carter Saris</b></h4>
+                            <small>Lorem Ipsum</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="jadapaisa_team">
+
+                        <div class="teamMemberPhoto order-2">
+                            <img src="images/teamMember.jpg" alt="">
+                        </div>
+                        <div class="order-1">
+                            <h4><b>Carter Saris</b></h4>
+                            <small>Lorem Ipsum</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="jadapaisa_team">
+                        <div class="teamMemberPhoto">
+                            <img src="images/teamMember.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4><b>Carter Saris</b></h4>
+                            <small>Lorem Ipsum</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="jadapaisa_team">
+                        <div class="teamMemberPhoto order-2">
+                            <img src="images/teamMember.jpg" alt="">
+                        </div>
+                        <div class="order-1">
+                            <h4><b>Carter Saris</b></h4>
+                            <small>Lorem Ipsum</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Meet Our Team end -->
+
+    <!-- FAQ  -->
+    <section id="faq" class="faq my-5" data-aos="zoom-in-down">
+        <div class="container">
+            <div class="row">
+                <h2 class="accordion_heading">FAQ's</h2>
+                <div class="accordion jadaPaisa_accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How to win cash prizes?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-muted">Our quizzes are a skill-based competition where you can can choose
+                                    the topic of the quiz as per
+                                    your interest, participate and stand a chance to win real cash prizes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How to win tailored offers, deals and discounts?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="text-muted">Users will be rewarded with tailored deals, discounts and offers
+                                    by:
+                                <ul>
+                                    <li class="text-muted">- By playing games</li>
+                                    <li class="text-muted">- By participating in quiz competitions</li>
+                                    <li class="text-muted">- Unlocking achievements by completing app milestones</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What is the eligibility criteria for participating in quiz?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li class="text-muted">- Users have to spend a certain number of game coins to be
+                                        eligible to
+                                        participate in the quiz. </li>
+                                    <li class="text-muted">- Users should add a certain amount in their JadaPaisa
+                                        Wallet.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                How to earn game coins/coin mining?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>Users can mine game coins through performing various activities on the app:
+                                </p>
+                                <ul>
+                                    <li class="text-muted">- Participating in polls and live surveys.</li>
+                                    <li class="text-muted">- Participating in Mini Games. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                What is the eligibility criteria for participating in Games?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>Users have to spend a certain number of game coins to be eligible to play games.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                What is the eligibility criteria for participating in polls and live surveys?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>Users just have to create a JadaPaisa account to be able to participate in polls and
+                                    live live surveys.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                How to add money in the JadaPaisa Wallet?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>Users can load money into their JadaPaisa wallet accounts by using their Paytm
+                                    account.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Why to add money in the JadaPaisa Wallet?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>Serving as one of the eligibility factors to participate in quiz and win real cash
+                                    prizes, JadaPaisa prompts user to add a paltry amount into their wallet to establish
+                                    a</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Will the money in the JadaPaisa wallet be deducted?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>No, the amount in the JadaPaisa Wallet is never deducted. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                When can the winners withdraw their cash prizes?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>You can withdraw your amount within the next 72 hours after the results are
+                                    announced. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEleven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                When can users withdraw eligibility added amount for participating in quiz competition?
+                            </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>Users can withdraw the amount 60 days after loading it into their JadaPaisa Wallet
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwelve">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwelvw" aria-expanded="false" aria-controls="collapseTwelvw">
+                                How does the loyalty program works?
+                            </button>
+                        </h2>
+                        <div id="collapseTwelvw" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>Loyalty program works by flagging the users with their loyalty level in the app</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThirteen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThirteen" aria-expanded="false"
+                                aria-controls="collapseThirteen">
+                                How to level up?
+                            </button>
+                        </h2>
+                        <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-muted">
+                                <p>User will get to view: </p>
+                                <ul>
+                                    <li class="text-muted">The number of polls they answer.</li>
+                                    <li class="text-muted">The number of game coins they earn.</li>
+                                    <li class="text-muted">The current amount in their JadaPaisa wallet.</li>
+                                </ul>
+                                <p>
+                                    Users level up by answering polls and playing quizzes and the more they progress to
+                                    higher levels, they get rewarded with premium quizzes that offer them higher cash
+                                    prizes and better discounts and offers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ end  -->
+
+    <!-- footer  -->
+    <footer id="faq" class="faq">
+        <div class="container">
+            <div class="row">
+                <div class="footer_data">
+                    <img src="images/logo.png" alt="" class="ftr_logo">
+                    <ul class="ftr_menus">
+                        <Li class="hvr-underline-from-center"><a href="#">Where</a></Li>
+                        <Li class="hvr-underline-from-center"><a href="#">Who</a></Li>
+                        <Li class="hvr-underline-from-center"><a href="#">How</a></Li>
+                        <Li class="hvr-underline-from-center"><a href="#">FAQ's</a></Li>
+                        <Li class="hvr-underline-from-center"><a href="#">Terms & Conditions</a></Li>
+                        <Li class="hvr-underline-from-center"><a href="#">Privacy Policy</a></Li>
+                    </ul>
+                    <ul>
+                        <li class="hvr-float-shadow"> <a href="#"><img src="images/fb.png" alt=""></a> </li>
+                        <li class="hvr-float-shadow"> <a href="#"><img src="images/insta.png" alt=""></a> </li>
+                        <li class="hvr-float-shadow"> <a href="#"><img src="images/in.png" alt=""></a> </li>
+                        <li class="hvr-float-shadow"> <a href="#"><img src="images/twitter.png" alt=""></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+    <script src="js/script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+@media only screen and (max-width: 768px) {
+    .arrow_image img, .arrow_image_mobile img {
+        display: none;
+    }
+
+    footer .footer_data ul {
+        display: inline-table;
+    }
+
+    footer .footer_data .ftr_logo {
+        width: 45%;
+    }
+
+    .faq .jadaPaisa_accordion {
+        width: 90%;
+    }
+
+    .meetOurTeam .jadapaisa_team .teamMemberPhoto img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .meetOurTeam h2 {
+        margin: 10px 0 20px 0;
+    }
+
+    .about .about_area {
+        flex-direction: column;
+    }
+
+    .about .about_area .about_content h2, .Services .servicesAll {
+        text-align: center;
+    }
+
+    .LearnPlayEarn .learn .learn_mobile img {
+        margin-top: 0;
+    }
+
+    .LearnPlayEarn .learn .learn_icon {
+        margin-bottom: 0;
+    }
+
+    .getItNow .getitnowContent p {
+        font-size: 17px;
+    }
+
+    .jadapaisa_navbar button {
+        background: #fff;
+    }
+
+    .learn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .LearnPlayEarn .learn .learn_mobile img{
+        width: 100%;
+    }
+    .LearnPlayEarn .learn .learn_icon{
+        width: 70px;
+        height: 70px;
+    }
+    .LearnPlayEarn .learn h2 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .LearnPlayEarn .learn .learn_mobile img{height: auto;}
+    .servicesAll{
+        text-align: center;
+    }
+    .Services .servicesAll img{
+        margin: 0 auto;
+    }
+    .meetOurTeam .jadapaisa_team {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

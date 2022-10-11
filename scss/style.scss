@@ -1,0 +1,819 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    &:hover {
+        color: inherit !important;
+    }
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+// Navbar
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.jadapaisa_navbar {
+    background-image: linear-gradient(to right, #5456b7, #a477be);
+    ul {
+        li {
+            a {
+                color: #fff;
+            }
+        }
+    }
+    /* Bounce To Bottom */
+    .hvr-bounce-to-bottom {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+    .hvr-bounce-to-bottom:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(93.16deg, #734d8b -21.65%, #a6579c 19.85%, #ff6a88 63.27%, #ab5196 99.07%);
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        border-radius: 5px;
+    }
+    .hvr-bounce-to-bottom:hover,
+    .hvr-bounce-to-bottom:focus,
+    .hvr-bounce-to-bottom:active {
+        color: white;
+    }
+    .hvr-bounce-to-bottom:hover:before,
+    .hvr-bounce-to-bottom:focus:before,
+    .hvr-bounce-to-bottom:active:before {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+}
+// Navbar end
+
+// banner
+
+.banner {
+    .banner_mobile_images_group {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        position: relative;
+        // 3 main cards
+        .banner_1-5 {
+            width: 18%;
+            height: fit-content;
+            position: absolute;
+            // display: none;
+        }
+        .banner_2-4 {
+            width: 20%;
+            height: fit-content;
+            position: absolute;
+            // display: none;
+        }
+        .banner-middle {
+            width: 22%;
+            margin: 0 auto;
+        }
+        // 3 main cards end
+        .game_banner_mobile {
+            left: 9%;
+            z-index: -1;
+        }
+        .earn_banner_mobile {
+            left: 23%;
+            z-index: -1;
+        }
+        .learn_banner_mobile {
+            right: 23%;
+            z-index: -1;
+        }
+        .Play_banner_mobile {
+            right: 9%;
+            z-index: -2;
+        }
+        .logo_jadapaisa_color {
+            position: absolute;
+            width: 10%;
+            top: 36%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            animation: zoominoutsinglefeatured 1s infinite;
+        }
+        @keyframes zoominoutsinglefeatured {
+            0% {
+                transform: scale(1, 1);
+            }
+            50% {
+                transform: scale(1.1, 1.1);
+            }
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+    }
+}
+
+// Banner end
+
+// getItNow
+.getItNow {
+    .getitnowContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            border: none;
+            background: linear-gradient(93.16deg, #734d8b -21.65%, #a6579c 19.85%, #ff6a88 63.27%, #ab5196 99.07%);
+            border-radius: 7px;
+            color: #fff;
+            padding: 8px 40px;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 22px;
+            a {
+                color: #a35ca3;
+            }
+        }
+    }
+}
+// getItNow end
+
+//  Learn - Play - Earn
+.LearnPlayEarn {
+    .learn {
+        text-align: center;
+        h2 {
+            color: #7c5397;
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 2rem;
+        }
+        .learn_icon {
+            background-color: #515392;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            box-shadow: 1px 12px 20px 2px #00000042;
+            margin-bottom: 1.5rem;
+            img {
+                width: 50%;
+            }
+            .arrow_image {
+                img {
+                    position: absolute;
+                    width: 240px;
+                    top: 21px;
+                    left: 160px;
+                }
+            }
+        }
+        .learn_mobile {
+            .playMobileImage {
+                background-image: url("../images/play_plain_whith_stand_bg.png");
+                background-repeat: no-repeat;
+                width: 70%;
+                height: 500px;
+                margin: 0 auto;
+                background-size: contain;
+                background-position: center;
+            }
+            img {
+                width: 70%;
+                // margin-top: 3.5rem;
+                height: 500px;
+                object-fit: contain;
+            }
+            .arrow_image_mobile {
+                img {
+                    width: 40%;
+                    position: absolute;
+                    left: 103%;
+                    top: 44%;
+                    transform: translate(-50%, -50%);
+                    height: auto;
+                }
+            }
+        }
+        .playLearn_iconBg {
+            background-color: #a35ca3;
+        }
+        .EarnLearn_iconBg {
+            background-color: #5053b1;
+        }
+
+        .learn_discription {
+            ul {
+                padding: 0;
+                text-align: center;
+                li {
+                    span {
+                        color: #515392;
+                    }
+                }
+            }
+        }
+    }
+}
+//  Learn - Play - Earn end
+// Services
+.Services {
+    .servicesAll {
+        width: 90%;
+        img {
+            width: 13% !important;
+        }
+        h2 {
+            margin: 15px 0;
+            font-size: 22px;
+        }
+    }
+}
+// Services end
+
+// About
+.about {
+    .about_area {
+        background-image: url("../images/About_banner.png");
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        .about_content {
+            h2 {
+                color: #a43c88;
+                img {
+                    width: 30%;
+                }
+            }
+        }
+        .about_image {
+            text-align: center;
+            img {
+                width: 90%;
+            }
+        }
+    }
+}
+// About end
+
+// meetOurTeam
+.meetOurTeam {
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        margin: 10px 0 50px 0;
+        position: relative;
+        z-index: 1;
+        &::before {
+            border-top: 2px solid #cfcfcf;
+            content: "";
+            margin: 0 auto;
+            position: absolute;
+            top: 120%;
+            left: 0;
+            right: 26%;
+            width: 22%;
+            z-index: -1;
+        }
+        &::after {
+            border-top: 2px solid #cfcfcf;
+            content: "";
+            margin: 0 auto;
+            position: absolute;
+            top: 120%;
+            left: 26%;
+            right: 0;
+            width: 22%;
+            z-index: -1;
+        }
+    }
+    .jadapaisa_team {
+        text-align: center;
+        .teamMemberPhoto {
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 4px solid #515392;
+                object-fit: cover;
+            }
+        }
+    }
+}
+// meetOurTeam end
+
+// FAQ
+.faq {
+    .accordion_heading {
+        text-align: center;
+        font-weight: bold;
+        margin: 10px 0 50px 0;
+        position: relative;
+        z-index: 1;
+        &::before {
+            border-top: 2px solid #cfcfcf;
+            content: "";
+            margin: 0 auto;
+            position: absolute;
+            top: 120%;
+            left: 0;
+            right: 20%;
+            width: 16%;
+            z-index: -1;
+        }
+        &::after {
+            border-top: 2px solid #cfcfcf;
+            content: "";
+            margin: 0 auto;
+            position: absolute;
+            top: 120%;
+            left: 20%;
+            right: 0;
+            width: 16%;
+            z-index: -1;
+        }
+    }
+    .jadaPaisa_accordion {
+        width: 65%;
+        margin: 0 auto;
+        height: 18rem;
+        overflow: hidden;
+        overflow-y: scroll;
+        .accordion-item {
+            border: none;
+            .accordion-button {
+                border: none;
+                font-size: 20px;
+                &::after {
+                    order: -1; //swap order
+                    margin-left: 0;
+                    margin-right: 1.5em; // just extra space between text and icon
+                }
+                &:focus {
+                    border: none;
+                    box-shadow: none;
+                }
+                &:not(.collapsed) {
+                    background-color: transparent;
+                    box-shadow: none;
+                    color: #a43c88;
+                }
+            }
+            .accordion-body {
+                padding: 1rem 1.25rem;
+                border-left: 3px solid #a43c88;
+                width: 94%;
+                float: right;
+                font-size: 18px;
+            }
+        }
+    }
+}
+// FAQ end
+
+// footer
+footer {
+    background-image: linear-gradient(to right, #5456b7, #a477be);
+    padding: 3rem 0;
+    .footer_data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .ftr_logo {
+            width: 15%;
+        }
+        .ftr_menus {
+            margin: 2rem 0;
+        }
+        ul {
+            display: flex;
+            li {
+                margin-right: 25px;
+                padding-bottom: 8px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                a {
+                    color: #fff;
+                    &:hover {
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+// footer end
+
+/* Wobble Horizontal */
+@-webkit-keyframes hvr-wobble-horizontal {
+    16.65% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    33.3% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes hvr-wobble-horizontal {
+    16.65% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    33.3% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+    83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.hvr-wobble-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-horizontal:hover,
+.hvr-wobble-horizontal:focus,
+.hvr-wobble-horizontal:active {
+    -webkit-animation-name: hvr-wobble-horizontal;
+    animation-name: hvr-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #fff;
+    color: #fff;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+/* Float Shadow */
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover,
+.hvr-float-shadow:focus,
+.hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before,
+.hvr-float-shadow:focus:before,
+.hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+.accordion-button::after {
+    background-image: url("../images/plus.png");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("../images/minus.png");
+}
+
+// text blink animation
+.learn_discription p span.typed-text,
+.learn_discription p span.typed-text-earn,
+.learn_discription p span.typed-text-Learn-mobile,
+.learn_discription p span.typed-text-earn-mobile {
+    font-weight: normal;
+    color: #515392;
+}
+.learn_discription p span.cursor,
+.learn_discription p span.cursor-earn,
+.learn_discription p span.cursor-learn-mobile,
+.learn_discription p span.cursor-earn-mobile {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.learn_discription p span.cursor.typing,
+.learn_discription p span.cursor-earn.typing,
+.learn_discription p span.cursor-learn-mobile.typing,
+.learn_discription p span.cursor-earn-mobile.typing {
+    animation: none;
+}
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+    49% {
+        background-color: #ccc;
+    }
+    50% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #ccc;
+    }
+}
+
+// custom scroll
+/* width */
+.jadaPaisa_accordion::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.jadaPaisa_accordion::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.jadaPaisa_accordion::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #5456b7, #a477be);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.jadaPaisa_accordion::-webkit-scrollbar-thumb:hover {
+    background: #a477be;
+}
+
+// Mobile Menu
+.blog_mobile_ul {
+    margin-top: 1rem;
+    li {
+        border-bottom: 1px solid #0000004a;
+        a {
+            color: #000 !important;
+        }
+    }
+    .dropdown-menu.show {
+        background: floralwhite;
+    }
+}
+.submenu_for_all_pages {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        li {
+            padding: 4px 0;
+            border-bottom: 1px solid #00a9e1;
+            transition: 0.3s all;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.related_articles_for_all_pages {
+    .submenus_new_cards {
+        .submenu_card_hover {
+            transition: 0.3s all;
+            img {
+                height: 130px;
+                object-fit: cover;
+            }
+            &:hover {
+                box-shadow: 0px 0px 7px 2px #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        // background-color: #000000;
+        background-image: linear-gradient(to right, #5456b7, #a477be);
+        overflow-x: hidden;
+        transition: 0.5s;
+        ul {
+            width: 93%;
+            margin: 0 auto;
+            li {
+                border-bottom: 1px solid #1f1f1f;
+            }
+        }
+        a {
+            padding: 10px 0;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s;
+            display: flex;
+            justify-content: space-between;
+            &:hover {
+                color: #f1f1f1;
+            }
+        }
+        .closebtn {
+            position: absolute;
+            top: 14px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+    .sports_mobile_border li {
+        border-bottom: 2px solid #00a9e1 !important;
+    }
+    .game_mobile_border li {
+        border-bottom: 2px solid #572e60 !important;
+    }
+    .media_mobile_border li {
+        border-bottom: 2px solid #006291 !important;
+    }
+    .lifestyle_mobile_border li {
+        border-bottom: 2px solid #853b95 !important;
+    }
+    .Fashion_mobile_border li {
+        border-bottom: 2px solid #f9a22b !important;
+    }
+    .Tech_mobile_border li {
+        border-bottom: 2px solid #a4282d !important;
+    }
+    .politics_mobile_border li {
+        border-bottom: 2px solid #f37b20 !important;
+    }
+}
+.dropdown-menu {
+    position: relative;
+    background-color: #000000;
+}
+.jadapaisa_mobile_menu {
+    background-image: linear-gradient(to right, #5456b7, #a477be);
+}
+#mobile_nav_header {
+    .col-4 {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.navbar-light .navbar-toggler {
+    border: none;
+}
+.playMobileImageWheel {
+    width: 60% !important;
+    margin-top: -31px !important;
+    animation: wheelRotation linear 2s infinite;
+}
+@keyframes wheelRotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
